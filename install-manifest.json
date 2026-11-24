@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/k0stah/psychology-content-skills",
+  "default_ref": "main",
+  "installation_unit": "individual-skill",
+  "skills": [
+    {
+      "name": "author-context",
+      "path": "skills/author-context",
+      "required_files": [
+        "SKILL.md",
+        "agents/openai.yaml",
+        "assets/context-template.md"
+      ]
+    },
+    {
+      "name": "audience-funnel",
+      "path": "skills/audience-funnel",
+      "required_files": [
+        "SKILL.md",
+        "agents/openai.yaml"
+      ]
+    },
+    {
+      "name": "format-research",
+      "path": "skills/format-research",
+      "required_files": [
+        "SKILL.md",
+        "agents/openai.yaml"
+      ]
+    },
+    {
+      "name": "content-repurpose",
+      "path": "skills/content-repurpose",
+      "required_files": [
+        "SKILL.md",
+        "agents/openai.yaml"
+      ]
+    },
+    {
+      "name": "psychology-review",
+      "path": "skills/psychology-review",
+      "required_files": [
+        "SKILL.md",
+        "agents/openai.yaml"
+      ]
+    },
+    {
+      "name": "content-measurement",
+      "path": "skills/content-measurement",
+      "required_files": [
+        "SKILL.md",
+        "agents/openai.yaml",
+        "assets/outcomes-synthetic.csv",
+        "assets/outcomes-template.csv",
+        "references/measurement-definitions.md"
+      ]
+    },
+    {
+      "name": "psychology-blog",
+      "path": "skills/psychology-blog",
+      "required_files": [
+        "SKILL.md",
+        "agents/openai.yaml"
+      ]
+    }
+  ],
+  "attribution": {
+    "destination": "provenance",
+    "files": [
+      "LICENSE",
+      "NOTICE.md",
+      "LICENSES/coreyhaines31-marketingskills-MIT.txt",
+      "LICENSES/social-media-skills-MIT.txt",
+      "sources/upstream.json",
+      "docs/sources.md"
+    ],
+    "source_record": "provenance/install-source.json"
+  }
+}

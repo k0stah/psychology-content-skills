@@ -97,6 +97,43 @@ def check_sources() -> int:
     return len(sources)
 
 
+def check_installation_manifest() -> None:
+    try:
+        manifest = json.loads((ROOT / "install-manifest.json").read_text(encoding="utf-8"))
+    except (OSError, ValueError) as exc:
+        errors.append(f"Cannot load installation manifest: {exc}")
+        return
+    require(manifest.get("schema_version") == 1, "Unsupported installation manifest schema.")
+    require(manifest.get("installation_unit") == "individual-skill",
+            "Install each skill as a separate package.")
+    skills = manifest.get("skills", [])
+    names = [entry.get("name") for entry in skills]
+    actual_names = sorted(path.parent.name for path in (ROOT / "skills").glob("*/SKILL.md"))
+    require(sorted(str(name) for name in names) == actual_names,
+            "Installation manifest must list every skill exactly once.")
+    require(bool(names) and names[-1] == "psychology-blog", "Install the coordinator last.")
+    for entry in skills:
+        name = entry.get("name")
+        if name not in actual_names:
+            continue
+        expected_path = f"skills/{name}"
+        require(entry.get("path") == expected_path, f"{name}: wrong source skill path.")
+        folder = ROOT / expected_path
+        actual_files = sorted(str(path.relative_to(folder)) for path in folder.rglob("*") if path.is_file())
+        require(sorted(entry.get("required_files", [])) == actual_files,
+                f"{name}: installation manifest omits or adds bundled resources.")
+    attribution = manifest.get("attribution", {})
+    expected = {"LICENSE", "NOTICE.md", "sources/upstream.json", "docs/sources.md"}
+    expected.update(str(path.relative_to(ROOT)) for path in (ROOT / "LICENSES").glob("*") if path.is_file())
+    listed = attribution.get("files", [])
+    require(len(listed) == len(expected) and set(listed) == expected,
+            "Installation must preserve the project license and complete attribution package.")
+    require(all((ROOT / path).is_file() for path in expected), "An attribution resource is missing.")
+    require(attribution.get("destination") == "provenance", "Unexpected attribution destination.")
+    require(attribution.get("source_record") == "provenance/install-source.json",
+            "Installation source record path is inconsistent.")
+
+
 def check_public_boundary(files: list[Path]) -> None:
     for path in files:
         rel = path.relative_to(ROOT)
@@ -129,6 +166,7 @@ def main() -> int:
     files = public_files()
     count = check_skills()
     sources = check_sources()
+    check_installation_manifest()
     check_public_boundary(files)
     check_links(files)
     if errors:
@@ -137,7 +175,7 @@ def main() -> int:
         print(f"Validation failed: {len(errors)} issue(s).", file=sys.stderr)
         return 1
     print(f"PASS: {count} skills, {sources} source records, {len(files)} public files.")
-    print("Metadata, local links, preserved license hashes and private-path exclusion passed.")
+    print("Metadata, installation manifest, local links, preserved license hashes and private-path exclusion passed.")
     print("Behavior, clinical correctness and live integrations are outside this check.")
     return 0
 

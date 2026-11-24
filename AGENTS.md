@@ -9,6 +9,10 @@ Build an author-led content workflow for psychologists and psychotherapists. The
 - Keep each skill focused and independently usable. Treat the six editorial roles as steps in one workflow; a role is not a requirement for a separate agent.
 - Root documentation may explain installation and architecture. Avoid extra README files within individual skills.
 
+## Installation requests
+
+When the user asks to install this collection, read [INSTALL.md](INSTALL.md) and [install-manifest.json](install-manifest.json). For ChatGPT, use the current native personal-skill management workflow and verify durable installation of every skill and its resources. Preserve license notices and existing customizations. Distinguish a completed account installation from session-only use. A request to review or edit this repository does not itself authorize installing skills into the current account.
+
 ## Shared context
 
 - Default private working directory: `private/psychology-content/` in the user's working project. Use `context.md` there as the single shared record for author identity, services, voice, audience evidence, professional boundaries and accepted learnings.

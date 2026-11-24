@@ -47,6 +47,14 @@ Observed for 2026-01-01 through 2026-01-10 UTC, with a cutoff of `2026-01-10T23:
 
 The response also distinguished unknown inquiry relevance from known inquiry counts. This was a synthetic fixture, not an accounting or production-data reconciliation.
 
+## ChatGPT installation guide — documentation checks
+
+Added on 2026-11-24: [INSTALL.md](../INSTALL.md) and [install-manifest.json](../install-manifest.json) define native ChatGPT installation of the seven separate skills. The agent-facing guide routes to the host's current skill-creator workflow and distinguishes persistent installation from session-only reading.
+
+The repository validator checked that the manifest lists all seven skill names exactly once, includes all 18 bundled skill files and preserves the six shared attribution files. It also checked the documentation links and the existing structural, license and private-path rules. README examples distinguish ChatGPT `@` mentions from local Codex `$` mentions.
+
+This change did not install anything into a ChatGPT account. Native save/reconciliation, updates to an existing customized installation and UI refresh behavior have not been exercised end to end. The guide requires the installing agent to verify those operations in the destination environment before claiming success.
+
 ## Not yet exercised independently
 
 The sparse-audience, confidentiality/unsupported-promise and approval-invalidation scenarios listed in [README.md](README.md) remain pending behavioral runs. Their instructions were inspected during development, but that inspection is not a substitute for execution.

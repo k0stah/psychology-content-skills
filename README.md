@@ -2,7 +2,7 @@
 
 An open, author-led editorial workflow for psychology and psychotherapy blogs. Turn a practitioner's own thoughts into distinct short videos and posts, preserve their voice, review sensitive claims, and learn from actual inquiries and bookings.
 
-[Українською](docs/README.uk.md) · [Architecture](docs/architecture.md) · [Sources and adaptations](docs/sources.md) · [Evaluation cases](evals/README.md)
+[Українською](docs/README.uk.md) · [Install in ChatGPT](INSTALL.md) · [Architecture](docs/architecture.md) · [Sources and adaptations](docs/sources.md) · [Evaluation cases](evals/README.md)
 
 ## What is included
 
@@ -20,23 +20,39 @@ The collection contains instructions, templates and examples. It does not bundle
 
 ## Get started
 
-With an Agent Skills-compatible host and the [Skills CLI](https://github.com/vercel-labs/skills):
+### ChatGPT: install with one link
+
+Send ChatGPT this request; the [agent installation guide](INSTALL.md) covers all seven skills and their supporting files:
+
+```text
+Read https://github.com/k0stah/psychology-content-skills/blob/main/INSTALL.md, install all seven Psychology Content Skills using ChatGPT's native personal-skills mechanism, and verify that each is installed and available.
+```
+
+This route requires a ChatGPT environment with [personal skill management](https://help.openai.com/en/articles/20001066-skills-in-chatgpt). Availability depends on your account and workspace. The agent checks support first and reports any installation limits; using files only in the current conversation is identified as session-only use. The collection requires no additional paid integrations or API keys.
+
+### Local coding agents
+
+For a local Agent Skills-compatible host, use the [Skills CLI](https://github.com/vercel-labs/skills):
 
 ```bash
 npx skills add k0stah/psychology-content-skills
 ```
 
-Choose the skills and target host in the installer's picker. The coordinator works best with all six specialist skills available. You can also use a specialist on its own.
+Choose the skills and target host in the installer's picker. This is a separate local installation path; it does not install personal skills in your ChatGPT account. The coordinator works best with all six specialist skills available. You can also use a specialist on its own.
 
 Alternatively, clone this repository, open it in your coding agent, and ask it to read `skills/psychology-blog/SKILL.md`. This is direct use of the files; it does not permanently install skills in a hosted product.
 
-Start with your author context:
+### First content request
 
-> Use $author-context to capture my approach, services and voice. Mark anything we do not know yet as unknown.
+In ChatGPT, start with your author context:
+
+> Use @author-context to capture my approach, services and voice. Mark anything we do not know yet as unknown.
 
 Then try a topic:
 
-> Use $psychology-blog. Here is my own observation about asking for help: [your note]. Suggest distinct angles for discovery, trust and inquiries, then draft three short videos in Ukrainian for my review.
+> Use @psychology-blog. Here is my own observation about asking for help: [your note]. Suggest distinct angles for discovery, trust and inquiries, then draft three short videos in Ukrainian for my review.
+
+In local Codex, use `$author-context` and `$psychology-blog` to invoke the same skills.
 
 Provide only material you are entitled to share. Use generalized practitioner observations; omit identifiable client and group details.
 
@@ -60,7 +76,7 @@ Use Python 3.10 or newer for the repository's structural validator:
 python scripts/validate.py
 ```
 
-It checks skill names and metadata, bundled references, local documentation links, source records and the public/private boundary. It does not test model quality or external integrations. The [evaluation cases](evals/README.md) describe separate behavioral checks and their recorded status.
+It checks skill names and metadata, the complete installation manifest, bundled references, local documentation links, source records and the public/private boundary. It does not test model quality or external integrations. The [evaluation cases](evals/README.md) describe separate behavioral checks and their recorded status.
 
 ## Reuse and provenance
 

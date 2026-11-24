@@ -1,0 +1,4 @@
+interface:
+  display_name: "Psychology Blog"
+  short_description: "Coordinate an author-led psychology content workflow"
+  default_prompt: "Use $psychology-blog to help with my psychology blog content."

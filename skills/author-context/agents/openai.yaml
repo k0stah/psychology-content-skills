@@ -1,0 +1,4 @@
+interface:
+  display_name: "Author Context"
+  short_description: "Capture author voice, services and accepted context"
+  default_prompt: "Use $author-context to build or update my psychology blog context from my notes and writing samples."

@@ -1,0 +1,1 @@
+record_id,event_id,occurred_at_utc,event_type,contact_ref,consultation_ref,primary_content_id,assisted_content_ids,attribution_basis,amount,currency,related_event_id,evidence_ref

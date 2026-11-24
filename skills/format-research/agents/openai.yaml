@@ -1,0 +1,4 @@
+interface:
+  display_name: "Format Research"
+  short_description: "Analyze video formats with visible source evidence"
+  default_prompt: "Use $format-research to find three source-backed formats for my topic and explain how I could film each one."

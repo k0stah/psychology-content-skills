@@ -1,0 +1,4 @@
+interface:
+  display_name: "Content Measurement"
+  short_description: "Connect content to observed inquiries and bookings"
+  default_prompt: "Use $content-measurement to assess these content outcomes, including attribution gaps and production effort."

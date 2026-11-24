@@ -1,0 +1,4 @@
+interface:
+  display_name: "Psychology Content Review"
+  short_description: "Review author fidelity, claims and confidentiality"
+  default_prompt: "Use $psychology-review to review this draft and flag claims or decisions that require my professional approval."

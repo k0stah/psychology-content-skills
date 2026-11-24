@@ -1,0 +1,227 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-24",
+  "review_scope": "Selected public instruction documents and license notices were retrieved read-only at the recorded commit. No upstream scripts were executed, packages installed, credentials requested or live integrations tested.",
+  "targets_semantics": "For adapted sources, targets identify local adapted instruction files. For reference-only sources, targets identify design areas considered during review; they do not imply redistributed code or text.",
+  "sources": [
+    {
+      "id": "coreyhaines31-marketingskills",
+      "repository": "https://github.com/coreyhaines31/marketingskills",
+      "revision": "8fd2fcade2fd6629026e9dfe6d133b55b36968b9",
+      "revision_url": "https://github.com/coreyhaines31/marketingskills/commit/8fd2fcade2fd6629026e9dfe6d133b55b36968b9",
+      "revision_observed_from": "https://api.github.com/repos/coreyhaines31/marketingskills/git/ref/heads/main",
+      "retrieved_on": "2026-11-24",
+      "license": "MIT",
+      "mode": "adapted",
+      "reviewed_paths": [
+        "skills/product-marketing/SKILL.md",
+        "skills/customer-research/SKILL.md",
+        "skills/social/SKILL.md",
+        "skills/copy-editing/SKILL.md",
+        "skills/attribution/SKILL.md",
+        "LICENSE"
+      ],
+      "reviewed_files": [
+        {
+          "path": "skills/product-marketing/SKILL.md",
+          "blob_sha": "a8197bddb8739b62c0e35504207d2565396d3915",
+          "url": "https://github.com/coreyhaines31/marketingskills/blob/8fd2fcade2fd6629026e9dfe6d133b55b36968b9/skills/product-marketing/SKILL.md"
+        },
+        {
+          "path": "skills/customer-research/SKILL.md",
+          "blob_sha": "6fb68214bda721ddeff6a63266ce6d0ceaddefc9",
+          "url": "https://github.com/coreyhaines31/marketingskills/blob/8fd2fcade2fd6629026e9dfe6d133b55b36968b9/skills/customer-research/SKILL.md"
+        },
+        {
+          "path": "skills/social/SKILL.md",
+          "blob_sha": "a99a03ad0d176d77021b197f83921d8ab4069845",
+          "url": "https://github.com/coreyhaines31/marketingskills/blob/8fd2fcade2fd6629026e9dfe6d133b55b36968b9/skills/social/SKILL.md"
+        },
+        {
+          "path": "skills/copy-editing/SKILL.md",
+          "blob_sha": "2065709be9c2571fc34ad79a0f453fb040d8c1c0",
+          "url": "https://github.com/coreyhaines31/marketingskills/blob/8fd2fcade2fd6629026e9dfe6d133b55b36968b9/skills/copy-editing/SKILL.md"
+        },
+        {
+          "path": "skills/attribution/SKILL.md",
+          "blob_sha": "620b0076a343392c910a5601579c4f373459b90f",
+          "url": "https://github.com/coreyhaines31/marketingskills/blob/8fd2fcade2fd6629026e9dfe6d133b55b36968b9/skills/attribution/SKILL.md"
+        },
+        {
+          "path": "LICENSE",
+          "blob_sha": "7c48dd638a9ebed49a8ef0c0c4eea90105381cdf",
+          "url": "https://github.com/coreyhaines31/marketingskills/blob/8fd2fcade2fd6629026e9dfe6d133b55b36968b9/LICENSE"
+        }
+      ],
+      "targets": [
+        "skills/author-context/SKILL.md",
+        "skills/audience-funnel/SKILL.md",
+        "skills/content-repurpose/SKILL.md",
+        "skills/psychology-review/SKILL.md",
+        "skills/content-measurement/SKILL.md"
+      ],
+      "license_file": "LICENSES/coreyhaines31-marketingskills-MIT.txt",
+      "license_url": "https://github.com/coreyhaines31/marketingskills/blob/8fd2fcade2fd6629026e9dfe6d133b55b36968b9/LICENSE",
+      "copyright_notice": "Copyright (c) 2025 Corey Haines",
+      "modifications": [
+        "Rewrote selected positioning, customer-research, repurposing, editing and attribution instruction patterns for an author-led psychology content workflow.",
+        "Replaced upstream context locations with one private/psychology-content/context.md record and explicit evidence types, dates and author-approved updates.",
+        "Adapted audience work to evidence-backed needs, questions and service fit; unsupported personas remain hypotheses.",
+        "Replaced generic marketing optimization with discovery, trust and inquiry content jobs, professional review, and exact-version author approval.",
+        "Restricted measurement to observed inquiries, bookings, paid first consultations and revenue; separated attribution from causal claims and prevented duplicate counting.",
+        "Did not bundle upstream tools, scripts, ads, publishing, outreach or tracking implementations."
+      ]
+    },
+    {
+      "id": "social-media-skills",
+      "repository": "https://github.com/social-media-skills/skills",
+      "revision": "f28cef2b7067ec64e79c9d85421c022c06659e03",
+      "revision_url": "https://github.com/social-media-skills/skills/commit/f28cef2b7067ec64e79c9d85421c022c06659e03",
+      "revision_observed_from": "https://api.github.com/repos/social-media-skills/skills/git/ref/heads/main",
+      "retrieved_on": "2026-11-24",
+      "license": "MIT",
+      "mode": "adapted",
+      "reviewed_paths": [
+        "skills/brand-profile/SKILL.md",
+        "skills/voice-builder/SKILL.md",
+        "skills/short-form-video-script/SKILL.md",
+        "LICENSE"
+      ],
+      "reviewed_files": [
+        {
+          "path": "skills/brand-profile/SKILL.md",
+          "blob_sha": "929cb4585bb9835e0fd6f1e54f106e03c9304cb0",
+          "url": "https://github.com/social-media-skills/skills/blob/f28cef2b7067ec64e79c9d85421c022c06659e03/skills/brand-profile/SKILL.md"
+        },
+        {
+          "path": "skills/voice-builder/SKILL.md",
+          "blob_sha": "bfb30dda93a4d1af67dd47ca5217a393e6fb43e3",
+          "url": "https://github.com/social-media-skills/skills/blob/f28cef2b7067ec64e79c9d85421c022c06659e03/skills/voice-builder/SKILL.md"
+        },
+        {
+          "path": "skills/short-form-video-script/SKILL.md",
+          "blob_sha": "ac05c92fd14743255799342dc74de66840a4698b",
+          "url": "https://github.com/social-media-skills/skills/blob/f28cef2b7067ec64e79c9d85421c022c06659e03/skills/short-form-video-script/SKILL.md"
+        },
+        {
+          "path": "LICENSE",
+          "blob_sha": "875c6a380ad9a9f77c9dc5c87c20825590ab5816",
+          "url": "https://github.com/social-media-skills/skills/blob/f28cef2b7067ec64e79c9d85421c022c06659e03/LICENSE"
+        }
+      ],
+      "targets": [
+        "skills/author-context/SKILL.md",
+        "skills/content-repurpose/SKILL.md"
+      ],
+      "license_file": "LICENSES/social-media-skills-MIT.txt",
+      "license_url": "https://github.com/social-media-skills/skills/blob/f28cef2b7067ec64e79c9d85421c022c06659e03/LICENSE",
+      "copyright_notice": "Copyright (c) 2026 Frank Heijdenrijk",
+      "modifications": [
+        "Adapted the shared brand profile and evidence-based voice extraction into one author context with professional boundaries and explicit author corrections.",
+        "Adapted short-video scripting to original author-led arguments, spoken text, on-screen text and filming notes, with distinct angles for each item.",
+        "Removed WoopSocial publishing assumptions, links to unbundled sibling skills, provider-specific workflows and unsupported universal performance benchmarks.",
+        "Replaced retention-only goals with the selected content job and relevant inquiry goal; added claim-source review and a recording-time check.",
+        "Kept raw author material and identifiable audience or client information outside the public collection."
+      ]
+    },
+    {
+      "id": "bradautomates-head-of-content",
+      "repository": "https://github.com/bradautomates/head-of-content",
+      "revision": "d841dcff2e4d74a4c31cb3ed2de6c2184de3a970",
+      "revision_url": "https://github.com/bradautomates/head-of-content/commit/d841dcff2e4d74a4c31cb3ed2de6c2184de3a970",
+      "revision_observed_from": "https://api.github.com/repos/bradautomates/head-of-content/git/ref/heads/main",
+      "retrieved_on": "2026-11-24",
+      "license": "MIT",
+      "mode": "reference-only",
+      "reviewed_paths": [
+        ".claude/skills/youtube-research/SKILL.md",
+        ".claude/skills/instagram-research/SKILL.md",
+        ".claude/skills/tiktok-research/SKILL.md",
+        ".claude/skills/video-content-analyzer/SKILL.md",
+        "LICENSE"
+      ],
+      "reviewed_files": [
+        {
+          "path": ".claude/skills/youtube-research/SKILL.md",
+          "blob_sha": "4dbcdcf32ff0d66594e7a4c03dfe615f0995e36a",
+          "url": "https://github.com/bradautomates/head-of-content/blob/d841dcff2e4d74a4c31cb3ed2de6c2184de3a970/.claude/skills/youtube-research/SKILL.md"
+        },
+        {
+          "path": ".claude/skills/instagram-research/SKILL.md",
+          "blob_sha": "7e60747c620c1145d47f00430b15a2911f578a74",
+          "url": "https://github.com/bradautomates/head-of-content/blob/d841dcff2e4d74a4c31cb3ed2de6c2184de3a970/.claude/skills/instagram-research/SKILL.md"
+        },
+        {
+          "path": ".claude/skills/tiktok-research/SKILL.md",
+          "blob_sha": "9adcc735363abec4c1922819e05b7b15c7066e37",
+          "url": "https://github.com/bradautomates/head-of-content/blob/d841dcff2e4d74a4c31cb3ed2de6c2184de3a970/.claude/skills/tiktok-research/SKILL.md"
+        },
+        {
+          "path": ".claude/skills/video-content-analyzer/SKILL.md",
+          "blob_sha": "82be15adcd6198c6cdfe34383d62810c5b7db9c1",
+          "url": "https://github.com/bradautomates/head-of-content/blob/d841dcff2e4d74a4c31cb3ed2de6c2184de3a970/.claude/skills/video-content-analyzer/SKILL.md"
+        },
+        {
+          "path": "LICENSE",
+          "blob_sha": "6d527514e96bcd981ddfa58fae261defcb37fbc5",
+          "url": "https://github.com/bradautomates/head-of-content/blob/d841dcff2e4d74a4c31cb3ed2de6c2184de3a970/LICENSE"
+        }
+      ],
+      "targets": [
+        "skills/format-research/SKILL.md"
+      ],
+      "license_url": "https://github.com/bradautomates/head-of-content/blob/d841dcff2e4d74a4c31cb3ed2de6c2184de3a970/LICENSE",
+      "copyright_notice": "Copyright (c) 2026 bradautomates",
+      "modifications": [
+        "Reviewed as a design reference for separating content discovery from video analysis; no upstream instruction file, executable script or connector is bundled.",
+        "The local workflow records metadata, transcript and video evidence separately and treats format effectiveness as a hypothesis.",
+        "Apify, TubeLab, Gemini and their credentials are upstream dependencies, not dependencies installed or configured by this collection.",
+        "No upstream scoring weights, recency formulas or claims of automatic access to a video URL were incorporated."
+      ]
+    },
+    {
+      "id": "melvynx-video-agent-skills",
+      "repository": "https://github.com/Melvynx/video-agent-skills",
+      "revision": "f4542923f7f796a1fa0e544cbfc1109d5eec87d8",
+      "revision_url": "https://github.com/Melvynx/video-agent-skills/commit/f4542923f7f796a1fa0e544cbfc1109d5eec87d8",
+      "revision_observed_from": "https://api.github.com/repos/Melvynx/video-agent-skills/git/ref/heads/main",
+      "retrieved_on": "2026-11-24",
+      "license": "MIT",
+      "mode": "reference-only",
+      "reviewed_paths": [
+        "skills/studio-script/SKILL.md",
+        "skills/outliers/SKILL.md",
+        "LICENSE"
+      ],
+      "reviewed_files": [
+        {
+          "path": "skills/studio-script/SKILL.md",
+          "blob_sha": "9da1538da4fbbed82cba11f261e748d7f1ef10fc",
+          "url": "https://github.com/Melvynx/video-agent-skills/blob/f4542923f7f796a1fa0e544cbfc1109d5eec87d8/skills/studio-script/SKILL.md"
+        },
+        {
+          "path": "skills/outliers/SKILL.md",
+          "blob_sha": "71f0cf1862b3bfebdcf41ea13c3bc0215462e0c7",
+          "url": "https://github.com/Melvynx/video-agent-skills/blob/f4542923f7f796a1fa0e544cbfc1109d5eec87d8/skills/outliers/SKILL.md"
+        },
+        {
+          "path": "LICENSE",
+          "blob_sha": "d4cae1a9bd4d1ce24c4b6505df00e60bfd340d5f",
+          "url": "https://github.com/Melvynx/video-agent-skills/blob/f4542923f7f796a1fa0e544cbfc1109d5eec87d8/LICENSE"
+        }
+      ],
+      "targets": [
+        "skills/content-repurpose/SKILL.md",
+        "skills/format-research/SKILL.md"
+      ],
+      "license_url": "https://github.com/Melvynx/video-agent-skills/blob/f4542923f7f796a1fa0e544cbfc1109d5eec87d8/LICENSE",
+      "copyright_notice": "Copyright (c) 2026 Melvyn Malherbe",
+      "modifications": [
+        "Reviewed studio-script as an alternative for creator-voice scripting, timing and human review; no upstream instruction file, script or tool configuration is bundled.",
+        "Reviewed outliers to assess and explicitly exclude its close-remake workflow; no outlier-remake instructions or source transcripts were copied.",
+        "The local workflow extracts abstract format observations and writes original arguments, examples and wording.",
+        "Treg, yt-dlp, upstream publishing, video-editing and account-connection workflows were not incorporated."
+      ]
+    }
+  ]
+}

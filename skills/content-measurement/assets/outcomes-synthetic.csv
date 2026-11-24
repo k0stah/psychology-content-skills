@@ -1,0 +1,9 @@
+record_id,event_id,occurred_at_utc,event_type,contact_ref,consultation_ref,primary_content_id,assisted_content_ids,attribution_basis,amount,currency,related_event_id,evidence_ref
+synthetic-row-1,synthetic-inquiry-1,2026-01-03T10:00:00Z,inquiry,synthetic-contact-1,,synthetic-post-a,,tracked,,,,synthetic-export-a
+synthetic-row-2,synthetic-inquiry-1,2026-01-03T10:00:00Z,inquiry,synthetic-contact-1,,synthetic-post-a,,tracked,,,,synthetic-export-b
+synthetic-row-3,synthetic-booking-1,2026-01-04T10:00:00Z,booking,synthetic-contact-1,synthetic-consultation-1,synthetic-post-a,synthetic-post-b,tracked,,,,synthetic-booking-export
+synthetic-row-4,synthetic-completion-1,2026-01-07T12:00:00Z,first_consultation_completed,synthetic-contact-1,synthetic-consultation-1,synthetic-post-a,synthetic-post-b,tracked,,,,synthetic-completion-export
+synthetic-row-5,synthetic-payment-1,2026-01-07T13:00:00Z,payment_received,synthetic-contact-1,synthetic-consultation-1,synthetic-post-a,synthetic-post-b,tracked,100,UAH,,synthetic-payment-export-a
+synthetic-row-6,synthetic-payment-1,2026-01-07T13:00:00Z,payment_received,synthetic-contact-1,synthetic-consultation-1,synthetic-post-a,synthetic-post-b,tracked,100,UAH,,synthetic-payment-export-b
+synthetic-row-7,synthetic-refund-1,2026-01-08T09:00:00Z,refund_paid,synthetic-contact-1,synthetic-consultation-1,synthetic-post-a,synthetic-post-b,tracked,20,UAH,synthetic-payment-1,synthetic-refund-export
+synthetic-row-8,synthetic-inquiry-2,2026-01-09T14:00:00Z,inquiry,synthetic-contact-2,,,,unknown,,,,synthetic-manual-observation

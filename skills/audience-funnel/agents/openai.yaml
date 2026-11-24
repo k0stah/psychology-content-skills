@@ -1,0 +1,4 @@
+interface:
+  display_name: "Audience and Funnel"
+  short_description: "Ground content jobs in audience evidence"
+  default_prompt: "Use $audience-funnel to map this theme to discovery, trust and inquiry using the audience evidence available."

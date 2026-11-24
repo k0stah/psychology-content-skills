@@ -1,0 +1,4 @@
+interface:
+  display_name: "Content Repurposing"
+  short_description: "Create distinct scripts from supported author ideas"
+  default_prompt: "Use $content-repurpose to turn my notes into distinct short-video scripts in my voice with realistic timing estimates."

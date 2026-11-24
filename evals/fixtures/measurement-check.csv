@@ -1,0 +1,12 @@
+record_id,event_id,occurred_at_utc,event_type,contact_ref,consultation_ref,primary_content_id,assisted_content_ids,attribution_basis,amount,currency,related_event_id,evidence_ref
+test-row-1,test-inquiry-1,2026-01-03T10:00:00Z,inquiry,test-person-1,,test-post-a,,tracked,,,,synthetic-a
+test-row-2,test-inquiry-1,2026-01-03T10:00:00Z,inquiry,test-person-1,,test-post-a,,tracked,,,,synthetic-b
+test-row-3,test-inquiry-2,2026-01-03T11:00:00Z,inquiry,test-person-2,,test-post-b,,self_reported,,,,synthetic-a
+test-row-4,test-inquiry-3,2026-01-03T12:00:00Z,inquiry,test-person-3,,,,unknown,,,,synthetic-a
+test-row-5,test-booking-1,2026-01-04T10:00:00Z,booking,test-person-1,test-consultation-1,test-post-a,test-post-b,tracked,,,,synthetic-bookings
+test-row-6,test-booking-2,2026-01-04T11:00:00Z,booking,test-person-2,test-consultation-2,test-post-b,,self_reported,,,,synthetic-bookings
+test-row-7,test-completion-1,2026-01-07T12:00:00Z,first_consultation_completed,test-person-1,test-consultation-1,test-post-a,test-post-b,tracked,,,,synthetic-completions
+test-row-8,test-payment-1,2026-01-07T13:00:00Z,payment_received,test-person-1,test-consultation-1,test-post-a,test-post-b,tracked,1200,UAH,,synthetic-payments-a
+test-row-9,test-payment-1,2026-01-07T13:00:00Z,payment_received,test-person-1,test-consultation-1,test-post-a,test-post-b,tracked,1200,UAH,,synthetic-payments-b
+test-row-10,test-payment-2,2026-01-07T14:00:00Z,payment_received,test-person-2,test-consultation-2,test-post-b,,self_reported,500,UAH,,synthetic-payments-a
+test-row-11,test-refund-1,2026-01-08T09:00:00Z,refund_paid,test-person-1,test-consultation-1,test-post-a,test-post-b,tracked,200,UAH,test-payment-1,synthetic-refunds
